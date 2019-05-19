@@ -1,0 +1,37 @@
+AMI ROM Tool - AFULNX
+
+Description :
+	AMI Firmware Update utility(APTIO) for LINUX.
+
+
+Release Date :
+
+
+Source Control Location :
+	SS: AptioV;$/AptioV/RomUtils/Afu/AfuLnx/64;
+
+Reference Document :	
+	readme.txt
+	readme_afulnx.txt
+	AMI_AptioV_AFU_User_Guide_NDA.pdf
+
+Known Issues :
+    Use "/Rn" parameter will have no effect or caused an exception error, when 
+    the SMBIOS module version is between "4.6.1_ALPHA_01.26.2_DMIRW_TEST" and 
+    "(INT)4.6.1_ALPHA_01.29_Type39".
+
+Release Notes:
+==============================================================================
+5.05.04
+	[AFU]
+	1.Fix SMBIOS Data can't restore, when SMBIOS Data in NVRAM and NVRAM is full. [EIP145538],[EIP145305]
+==============================================================================
+5.05.03
+	[AFU]
+	1.Change Version 3.05.02 to 5.05.03.
+	2.Fix check EC bin file header data return result error.
+	3.Fix Rom Hole does not Alignment block error.[EIP143348]
+
+	[AFUGUI-MFC]
+	1.Fix WINGUI Show OFBD ROM ID Check dialog issue.[ECR191374]
+	2.Fix WINGUI Show OFBD EC dialog issue.
